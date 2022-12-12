@@ -1,0 +1,441 @@
+.block-header {
+  width: 100%;
+  height: 100px;
+  padding: 0% 15%;
+  background-color: #10121154;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  color: #ffffff;
+  position: fixed;
+  z-index: 10;
+}
+.logo-header img {
+  width: 100%;
+}
+.block-header .nav ul {
+  display: flex;
+  gap: 10px;
+}
+.block-header .nav ul li {
+  font-size: 14px;
+  list-style: none;
+}
+.login-header {
+  display: flex;
+  gap: 10px;
+}
+.item-login {
+  padding: 0px 10px;
+  border-right: 1px solid #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.wrapper {
+  width: 100%;
+}
+.menu-mobile {
+  display: none;
+}
+.nav-xt {
+  display: none;
+}
+.block-slide {
+  padding: 0% 15%;
+  width: 100%;
+  background-image: url(/img/Slider.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-slide-text {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box-slide-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.box-slide-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.box-slide-text p {
+  font-size: 14px;
+  font-weight: 50;
+}
+.box-slide-person {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.container-page {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0% 15%;
+}
+.workout-list {
+  width: 100%;
+  height: 427px;
+  position: relative;
+}
+.workout-card {
+  position: absolute;
+  top: -85px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: 0px 4px 5px #eaeaea;
+}
+.card-content {
+  width: calc(100% / 3);
+  height: 250px;
+  background-color: #ffffff;
+}
+.card-content img {
+  width: 100%;
+  height: 100%;
+}
+.card-item {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.card-item img {
+  width: 67px;
+  height: 67px;
+}
+.content-tab {
+  width: 100%;
+}
+.content-tab {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+}
+.content-tab button {
+  border: none;
+  outline: none;
+  padding: 16px;
+  background-color: #ffffff;
+}
+.content-tab button:focus {
+  border-bottom: 1px solid red;
+  color: red;
+  z-index: 5;
+}
+.block-gym {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.gym-card {
+  width: 25%;
+  height: 350px;
+  position: relative;
+}
+.gym-card:hover .gym-icon {
+  display: block;
+  z-index: 1;
+}
+.gym-card:hover {
+  border: 1px solid #eee;
+}
+.gym-content {
+  width: 100%;
+  height: 100%;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+}
+.gym-content img {
+  width: 100%;
+  height: 70%;
+}
+.gym-content p {
+  font-size: 16px;
+}
+.gym-content h5 {
+  font-size: 16px;
+}
+.gym-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.gym-icon-img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 25px;
+}
+.gym-icon-img i {
+  padding: 8px;
+  border: 1px solid #eee;
+}
+.gym-icon-img i:hover {
+  padding: 8px;
+  background-color: red;
+  color: white;
+}
+.block-comment {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 10%;
+  border-bottom: 1px solid #eee;
+}
+.block-comment h1 {
+  font-size: 32px;
+  font-weight: 700px;
+}
+.block-comment h3 {
+  font-size: 24px;
+  font-weight: 600px;
+}
+.block-comment p {
+  font-size: 16px;
+  font-weight: 500px;
+}
+.block-comment-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.block-comment-image img {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+}
+.block-comment-dot {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.block-comment-dot i {
+  color: #eee;
+}
+.block-comment-dot i:hover {
+  color: red;
+}
+.block-donors {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px 10px;
+}
+.block-information {
+  width: 100%;
+  padding: 20px 15%;
+  background-color: #101211;
+}
+.block-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #ffffff;
+  align-items: center;
+  padding: 100px 0px 60px 0px;
+  border-bottom: 1px solid white;
+}
+.block-about img {
+  width: 200px;
+  height: 50px;
+}
+.address {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card-address {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #cac6c6;
+}
+.card-address h1 {
+  color: #ffffff;
+}
+.block-footer {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media screen and (max-width: 48em) {
+  .block-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 600px;
+  }
+  .box-slide-person img {
+    width: 70%;
+  }
+  .box-slide-text {
+    padding-top: 70px;
+  }
+  .box-slide-person {
+    width: 70%;
+    height: auto !important;
+  }
+  .block-donors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .block-donors-img img {
+    width: 100%;
+  }
+  .card-content {
+    width: calc(100% / 2);
+    height: 215px;
+    background-color: #ffffff;
+  }
+  .container-page {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  .workout-card {
+    position: static;
+  }
+  .gym-card {
+    width: 50%;
+  }
+  .block-about {
+    gap: 9px;
+    padding: 8px 0px 60px 0px;
+    border-bottom: 1px solid white;
+    text-align: center;
+  }
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .card-address {
+    width: 45%;
+    padding: 0px;
+  }
+  .card-address h1 {
+    font-size: 18px;
+  }
+  .block-footer {
+    font-size: 11px;
+  }
+  .block-gym {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .block-donors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .workout-list {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .block-gym {
+    height: 1500px;
+  }
+  .block-comment h1 {
+    font-size: 20px;
+  }
+  .block-comment p {
+    font-size: 14px;
+  }
+  .nav {
+    display: none;
+  }
+  .block-header {
+    position: relative;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .nav-xt {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    height: 36vh;
+    background-color: #eee;
+    left: 0;
+    display: none;
+  }
+  .nav-xt ul li {
+    list-style: none;
+    text-align: center;
+    color: red;
+  }
+  .nav-xt ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 10px;
+  }
+  .is-hidden {
+    display: block;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+  .block-header {
+    height: 65px;
+  }
+  .block-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 650px;
+  }
+  .box-slide-person img {
+    width: 50%;
+  }
+  .box-slide-text {
+    padding-top: 74px;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
