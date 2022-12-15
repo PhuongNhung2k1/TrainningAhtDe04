@@ -1,12 +1,13 @@
 .container-page {
     background-color: #ffffff;
     width: 100%;
-    padding: 0% 15%;
+    padding: 0% 20%;
   }
   
   .workout-list {
     width: 100%;
     height: 427px;
+    // padding: 0 7%;
     position: relative;
   }
   .workout-card {
@@ -41,6 +42,15 @@
     height: 67px;
   }
 
+  .card-content p {
+    display: inline-block;
+    max-width: 250px;
+    font-size: 12px;
+    color: #a4a4a4;
+    flex-wrap: wrap;
+    
+  }
+
 //   Content tab 
 .content-tab {
     width: 100%;
@@ -55,7 +65,11 @@
     outline: none;
     padding: 16px;
     background-color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
+  
   .content-tab button:focus {
     border-bottom: 1px solid red;
     color: red;
@@ -67,7 +81,6 @@
 // listing
 .block-gym {
     width: 100%;
-    height: 700px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -134,22 +147,37 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     padding-bottom: 10%;
     border-bottom: 1px solid #eee;
   }
   
+  .block-comment-slide {
+    display: flex;
+  }
+
+  @-webkit-keyframes comment-slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    80% {margin-left: -1456px;}
+  }
   .block-comment h1 {
-    font-size: 32px;
+    font-size: 37px;
     font-weight: 700px;
+    font-family: 'Poppins Bold';
   }
   .block-comment h3 {
     font-size: 24px;
     font-weight: 600px;
   }
   .block-comment p {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Poppins Medium';
     font-weight: 500px;
+    color: #d2d2d2;
   }
   .block-comment-image {
     display: flex;
@@ -171,6 +199,17 @@
   }
   .block-comment-dot i:hover {
     color: red;
+  }
+
+  // Create Slider for block-comment 
+  .block-comment-slide {
+    
+    text-align: center;
+    overflow: hidden;
+  }
+  .comment-slider {
+    width: 100%;
+    align-items: center;
   }
 // End comment review 
 // Brands - Donors 
@@ -199,5 +238,13 @@
   .block-about img {
     width: 200px;
     height: 50px;
+  }
+  .block-about p {
+    max-width: 710px;
+    font-family: 'Poppins';
+    color: #d2d2d2;
+  }
+  .block-about i {
+    padding: 0 25px;
   }
 // End Brands - Donors 
